@@ -1,3 +1,10 @@
 language: java
 jdk:
-  - oraclejdk7
+- oraclejdk7
+deploy:
+  provider: heroku
+  api_key:
+    secure: PbiDsj5XezqJct54jfOLJ06C0oz7qoxKDUy0kc57OzF86c5ebSvJL5OaV3ObsUMozxRkkZX+qV5JR2ZcE4NyjLFIZuIi49xzGei8e4cUalrw9iL3SKwmjAtIGOTczo/NxGiVLlDKcMJqPsW6vIdRC4gI8bygIQMgkx7DGxl8KIk=
+  app: buildtest
+  on:
+    repo: rennersebastian/buildtest
